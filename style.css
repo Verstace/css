@@ -136,11 +136,13 @@ body {
   min-width: 320px;
   position: relative;
   font-family: "Open Sans",sans-serif;
-  overflow-x: hidden;
   line-height: 1;
   opacity: 1;
   color: #303030;
   background: #f3f3f3
+}
+.wrapper {
+  overflow-x: hidden
 }
 .container {
   max-width: 1140px;
@@ -1701,6 +1703,29 @@ body {
   -webkit-box-align: center;
   align-items: center
 }
+.quick-zakaz-2 {
+  margin-bottom: 55px;
+  padding-right: 25px
+}
+.quick-zakaz-2 .input-wrap {
+  width: 205px;
+  margin-right: 15px
+}
+.quick-zakaz-2 .input-wrap input {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #d3d3d3;
+  text-indent: 10px
+}
+.quick-zakaz-2 .btn-wrap {
+  margin-left: auto
+}
+.quick-zakaz-2 .btn {
+  background: #793b88;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px
+}
 .quick-zakaz .checkbox-police {
   width: 182px;
   flex-shrink: 0
@@ -1883,6 +1908,9 @@ body {
   -webkit-box-align: center;
   align-items: center
 }
+.basket-promo-2 {
+  margin-bottom: 1px
+}
 .basket-promo-title {
   font-weight: 300;
   color: #919191;
@@ -1896,6 +1924,9 @@ body {
   text-indent: 10px;
   margin-right: 15px;
   margin-left: 60px
+}
+.basket-promo-code-2 {
+  width: 430px
 }
 .basket-promo-btn {
   height: 40px;
@@ -2877,6 +2908,27 @@ button.mfp-close {
     width: 100%;
     margin-bottom: 20px
   }
+  .quick-zakaz-2 {
+    -webkit-box-pack: justify;
+    justify-content: space-between
+  }
+  .quick-zakaz-2 .input-wrap {
+    margin-right: 0
+  }
+  .quick-zakaz-2 .btn-wrap {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center
+  }
+  .quick-zakaz-2 .btn {
+    width: 205px;
+    margin-left: 0
+  }
   .quick-zakaz {
     flex-wrap: wrap;
     padding-right: 30px;
@@ -2899,8 +2951,14 @@ button.mfp-close {
   .quick-zakaz .input-phone {
     margin-right: 0
   }
+  .basket-promo .prev-catalog.prev-catalog-2 {
+    display: block
+  }
   .basket-promo-title {
     margin-left: 0
+  }
+  .basket-promo-code-2 {
+    width: 260px
   }
   .basket-promo .prev-catalog {
     display: none
@@ -2929,6 +2987,14 @@ button.mfp-close {
   }
   .footer-bottom-info li {
     margin-right: 15px
+  }
+}
+@media screen and (max-width:992px) and (max-width:768px) {
+  .quick-zakaz-2 .btn-wrap {
+    margin-top: 0
+  }
+  .basket-promo-code-2 {
+    margin: 0
   }
 }
 @media screen and (max-width:768px) {
@@ -3025,8 +3091,33 @@ button.mfp-close {
   .catalog-page-products {
     width: calc(100% - 30px)
   }
-  .quick-zakaz {
-    display: none
+  .quick-zakaz-2 {
+    -webkit-box-pack: center;
+    justify-content: center
+  }
+  .quick-zakaz-2 .input-wrap {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 30px
+  }
+  .quick-zakaz-2 .btn {
+    margin: 0;
+    width: 100%;
+    max-width: 320px
+  }
+  .quick-zakaz-title {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px
+  }
+  .quick-zakaz button {
+    -webkit-box-ordinal-group: 11;
+    order: 10;
+    margin: 20px auto 0
+  }
+  .quick-zakaz .input-phone {
+    margin: 0 auto 10px
   }
   .basket-wrapper {
     background-color: transparent;
@@ -3059,6 +3150,11 @@ button.mfp-close {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center
+  }
+  .basket-promo .prev-catalog.prev-catalog-2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px
   }
   .basket-promo {
     background: #fff;
